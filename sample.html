@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CVR Online Book Store</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman";
+        }
+
+        /* MAIN TABLE */
+
+        .main {
+            width: 100%;
+            border: 2px solid gray;
+            border-spacing: 3px;
+        }
+
+
+        /* HEADER */
+
+        .logo {
+            width: 20%;
+            background-color: gray;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 170px;
+            height: 170px;
+        }
+
+        .college-name {
+            width: 80%;
+            background-color: gray;
+            text-align: center;
+        }
+
+        .college-name h1 {
+            font-size: 36px;
+        }
+
+        .college-name p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        /* LEFT MENU */
+
+        .menu {
+            width: 20%;
+            vertical-align: top;
+            background-color: #ffffe8;
+            padding: 20px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px;
+            margin-bottom: 5px;
+
+            color: blue;
+            font-size: 20px;
+            text-decoration: underline;
+
+            cursor: pointer;
+        }
+
+
+        /* RIGHT CONTENT */
+
+        .content {
+            width: 80%;
+            vertical-align: top;
+            background-color: #ffffe8;
+            padding: 20px;
+            min-height: 600px;
+        }
+
+
+        /* HOME */
+
+        .content h1 {
+            color: darkblue;
+            text-align: center;
+            font-size: 42px;
+            border-bottom: 2px solid blue;
+            padding-bottom: 10px;
+        }
+
+        .college-image {
+            width: 500px;
+            display: block;
+            margin: auto;
+        }
+
+        .description {
+            color: brown;
+            font-size: 25px;
+        }
+
+
+        /* FEATURES */
+
+        .features {
+            width: 100%;
+            border: 1px solid gray;
+        }
+
+        .features-title {
+            background-color: orange;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .features-list {
+            background-color: #dffcff;
+            font-size: 18px;
+        }
+
+
+        /* FORMS */
+
+        .form-box {
+            width: 400px;
+            margin: auto;
+        }
+
+        .form-box input,
+        .form-box select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+        }
+
+        .form-box button {
+            padding: 10px 30px;
+        }
+
+
+        /* FOOTER */
+
+        .footer {
+            background-color: gray;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<table class="main">
+
+    <tr>
+
+        <td class="logo">
+
+            <img src="cvr.png" alt="CVR Logo">
+
+        </td>
+
+
+        <td class="college-name">
+
+            <h1>CVR COLLEGE OF ENGINEERING</h1>
+
+            <p>Vastunagar, Mangalpalli</p>
+
+            <p>Hyderabad, Telangana</p>
+
+        </td>
+
+    </tr>
+
+</table>
+
+
+
+<!-- ================= MAIN BODY ================= -->
+
+<table class="main">
+
+    <tr>
+
+
+        <!-- LEFT MENU -->
+
+        <td class="menu">
+
+            <a onclick="showPage('home')">
+                Home
+            </a>
+
+            <a onclick="showPage('login')">
+                Login
+            </a>
+
+            <a onclick="showPage('registration')">
+                Registration
+            </a>
+
+            <a onclick="showPage('catalog')">
+                Catalog
+            </a>
+
+            <a onclick="showPage('cart')">
+                Cart
+            </a>
+
+        </td>
+
+
+
+        <!-- RIGHT CONTENT -->
+
+        <td class="content">
+
+
+            <!-- HOME -->
+
+            <div id="home">
+
+                <h1>
+                    WELCOME TO CVR ONLINE BOOK STORE
+                </h1>
+
+                <img src="college.jpg"
+                     class="college-image">
+
+                <p class="description">
+
+                    The CVR Online Book Store is developed
+                    for engineering students to purchase
+                    textbooks online.
+
+                </p>
+
+
+                <table class="features">
+
+                    <tr>
+
+                        <td class="features-title">
+                            Features
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="features-list">
+
+                            <ul>
+
+                                <li>Easy Student Registration</li>
+
+                                <li>Secure Login</li>
+
+                                <li>Department Wise Books</li>
+
+                                <li>Shopping Cart</li>
+
+                                <li>Engineering Text Books</li>
+
+                                <li>Affordable Prices</li>
+
+                                <li>Simple Navigation</li>
+
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- LOGIN -->
+
+            <div id="login" style="display:none;">
+
+                <h1>Student Login</h1>
+
+                <div class="form-box">
+
+                    <label>Username</label>
+
+                    <input type="text">
+
+                    <label>Password</label>
+
+                    <input type="password">
+
+                    <button>
+                        Login
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REGISTRATION -->
+
+            <div id="registration" style="display:none;">
+
+                <h1>Student Registration</h1>
+
+                <div class="form-box">
+
+                    <label>Name</label>
+
+                    <input type="text">
+
+                    <label>Email</label>
+
+                    <input type="email">
+
+                    <label>Password</label>
+
+                    <input type="password">
+
+                    <label>Branch</label>
+
+                    <select>
+
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>MECH</option>
+                        <option>CIVIL</option>
+
+                    </select>
+
+                    <button>
+                        Register
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CATALOG -->
+
+            <div id="catalog" style="display:none;">
+
+                <h1>Book Catalog</h1>
+
+                <table border="1"
+                       style="
+                       width:100%;
+                       border-collapse:collapse;
+                       text-align:center;
+                       ">
+
+                    <tr>
+
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Price</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Data Structures</td>
+                        <td>R. S. Salaria</td>
+                        <td>₹500</td>
+
+                        <td>
+                            <button>Add to Cart</button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Operating Systems</td>
+                        <td>Galvin</td>
+                        <td>₹600</td>
+
+                        <td>
+                            <button>Add to Cart</button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Computer Networks</td>
+                        <td>Tanenbaum</td>
+                        <td>₹550</td>
+
+                        <td>
+                            <button>Add to Cart</button>
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- CART -->
+
+            <div id="cart" style="display:none;">
+
+                <h1>Shopping Cart</h1>
+
+                <p>
+                    Your cart is currently empty.
+                </p>
+
+            </div>
+
+
+        </td>
+
+    </tr>
+
+
+    <!-- FOOTER -->
+
+    <tr>
+
+        <td colspan="2" class="footer">
+
+            © 2025 CVR College of Engineering |
+            Developed by CSE(DS) Student 24B81A6740
+
+        </td>
+
+    </tr>
+
+</table>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function showPage(page) {
+
+    document.getElementById("home").style.display = "none";
+
+    document.getElementById("login").style.display = "none";
+
+    document.getElementById("registration").style.display = "none";
+
+    document.getElementById("catalog").style.display = "none";
+
+    document.getElementById("cart").style.display = "none";
+
+
+    document.getElementById(page).style.display = "block";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

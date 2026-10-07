@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CSE(DS) Department</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+        }
+
+        .main {
+            width: 100%;
+            border: 2px solid rgb(131, 88, 88);
+            border-spacing: 3px;
+        }
+
+        /* LOGO */
+
+        .logo {
+            width: 20%;
+            background-color: rgba(207, 207, 158, 0.686);
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .logo img {
+            width: 170px;
+            height: 170px;
+        }
+
+        /* COLLEGE NAME */
+
+        .college-name {
+            width: 80%;
+            background-color: rgb(212, 221, 175);
+            text-align: center;
+        }
+
+        .college-name h1 {
+            font-size: 24px;
+        }
+
+        .college-name p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* LEFT MENU */
+
+        .menu {
+            width: 20%;
+            vertical-align: top;
+            background-color: #aec0a8;
+            padding: 10px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px;
+            margin-bottom: 5px;
+            color: blue;
+            font-size: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* CONTENT */
+
+        .content {
+            width: 80%;
+            vertical-align: top;
+            background-color: #ffffe8;
+            padding: 10px;
+            min-height: 600px;
+        }
+
+        .content p {
+            padding: 20px;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+.faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.faculty-card {
+    width: 28%;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 1px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.faculty-card h2 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+.faculty-card p {
+    padding: 2px;
+    margin: 2px;
+    font-size: 17px;
+}
+
+.faculty-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.faculty-heading {
+    text-align: center;
+    background-color: #d9eaff;
+    color: darkblue;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: 2px solid darkblue;
+}
+.faculty-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+    .cp {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cp img {
+    width: 40%;
+    height: 250px;
+    object-fit: cover;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<table class="main">
+
+    <tr>
+
+        <td class="logo">
+
+            <img src="cvr.png" alt="logo">
+
+        </td>
+
+        <td class="college-name">
+
+            <h1>
+                CVR COLLEGE OF ENGINEERING
+            </h1>
+
+            <p>
+                Vastunagar, Mangalpalli
+            </p>
+
+            <p>
+                Hyderabad, Telangana
+            </p>
+
+        </td>
+
+    </tr>
+
+</table>
+
+
+<!-- ================= MENU + CONTENT ================= -->
+
+<table class="main">
+
+    <tr>
+
+        <!-- ================= LEFT MENU ================= -->
+
+        <td class="menu">
+
+            <a onclick="showPage('vm')">
+                Vision, Mission
+            </a>
+
+            <a onclick="showPage('P')">
+                PEOs, POs, COs
+            </a>
+
+            <a onclick="showPage('F')">
+                Faculty
+            </a>
+
+            <a onclick="showPage('I')">
+                Infrastructure
+            </a>
+
+            <a onclick="showPage('FP')">
+                Faculty Publications
+            </a>
+
+            <a onclick="showPage('AA')">
+                Activities and Achievements
+            </a>
+
+            <a onclick="showPage('SC')">
+                Student Chapter
+            </a>
+
+            <a onclick="showPage('S')">
+                Students
+            </a>
+
+        </td>
+
+
+        <!-- ================= RIGHT CONTENT ================= -->
+
+        <td class="content">
+
+
+            <!-- 1. VISION AND MISSION -->
+
+            <div id="vm">
+
+                <h1 style="text-align:center;">
+                    Vision 
+                </h1>
+
+                <!-- YOU FILL YOUR CONTENT HERE -->
+
+                <p>
+                    To nurture pioneering Computer Science Engineers with a focus on Data Science by providing them with an outstanding 
+                    educational experience that fosters all-round development, academic excellence and creative thinking, thereby propelling 
+                    advancements in technology and society.
+
+                </p>
+                <h1 style="text-align:center">Mission</h1>
+                <p>
+                    M1: To offer with comprehensive educational program that imparts the academic knowledge with a solid foundation in data science
+                     concepts, techniques and applications.
+                </p>
+                <p>
+                    M2: To encourage students for applying the tools, techniques of data analytics and conceptual knowledge for solving societal
+                     problems.
+                </p>
+                <p>
+                    M3: To enable researchers and students to discover implicit patterns in large and complex data sets.
+                </p>
+                <p>
+                    M4: To accustom the students with current industry practices, environment and entrepreneurship.
+                </p>
+
+            </div>
+
+
+            <!-- 2. PEOs, POs, COs -->
+
+<div id="P" style="display:none;">
+
+    <h1 style="text-align:center;">
+        PEOs, POs and COs
+    </h1>
+
+
+    <!-- PEO FOLDER -->
+
+    <div
+        onclick="showFiles('peoFiles')"
+        style="
+            cursor:pointer;
+            padding:15px;
+            font-size:22px;
+        "
+    >
+        📁 PEO
+    </div>
+
+    <div id="peoFiles" style="display:none; margin-left:40px;">
+
+        <p>
+            📄
+            <a href="PEOsds.pdf" target="_blank">
+                PEOsds
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- PO FOLDER -->
+
+    <div
+        onclick="showFiles('poFiles')"
+        style="
+            cursor:pointer;
+            padding:15px;
+            font-size:22px;
+        "
+    >
+        📁 PO
+    </div>
+
+    <div id="poFiles" style="display:none; margin-left:40px;">
+
+        <p>
+            📄
+            <a href="ProgramOutcomesnew.pdf" target="_blank">
+                ProgramOutcomesnew
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- CO FOLDER -->
+
+    <div
+        onclick="showFiles('coFiles')"
+        style="
+            cursor:pointer;
+            padding:15px;
+            font-size:22px;
+        "
+    >
+        📁 CO
+    </div>
+
+    <div id="coFiles" style="display:none; margin-left:40px;">
+
+        <p>
+            📄
+            <a href="B.TechCSE(DS)-R18.pdf" target="_blank">
+                B.TechCSE(DS)-R18
+            </a>
+        </p>
+
+        <p>
+            📄
+            <a href="B.TechCSE(DS)R22_COS(1).pdf" target="_blank">
+                B.TechCSE(DS)R22_COS(1)
+            </a>
+        </p>
+        <p>
+            📄
+            <a href="B.TechCSE(DS)R25tillII-IISem.pdf" target="_blank">
+                B.TechCSE(DS)R25tillII-IISem
+            </a>
+        </p>
+
+    </div>
+
+            </div>
+
+
+            <!-- 3. FACULTY -->
+<div id="F" style="display:none;">
+
+    <h1 style="text-align:center;">
+        Faculty
+    </h1>
+
+
+    <!-- Professors -->
+
+    <h2 class="faculty-heading">
+        Professors
+    </h2>
+
+    <div class="faculty-container">
+
+        <!-- Card 1 (Suryanarayana sir)-->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/1-3572025193.jpg" alt="faculty-photo" class="faculty-photo">
+            <h2>Dr. S.V. Suryanarayana</h2>
+
+            <p>
+                <b>Qualification:</b> M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>Designation:</b> Head of the Department
+            </p>
+
+            <p>
+                <b>AICTE ID:</b> 1-3572025193
+            </p>
+
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37438"
+           target="_blank">
+            View Profile
+        </a>
+        </div>
+
+
+        <!-- Card 2 (Satyanarayana Sir) -->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/1-2181574427.jpg"      alt="faculty-photo"      class="faculty-photo">
+            <h2>Dr. N. Satyanarayana</h2>
+
+            <p>
+                <b>Qualification:</b> M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>AICTE ID:</b> 1-2181574427
+            </p>
+
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37439"
+           target="_blank">
+            View Profile
+        </a>
+        </div>
+
+    </div>
+
+
+    <!-- Associative Professors -->
+
+    <h2 class="faculty-heading">
+       Associative Professors
+    </h2>
+
+
+    <div class="faculty-container">
+
+        <!-- Card 1 (Prakash Sir)-->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/1-444211135.jpg"      alt="faculty-photo"      class="faculty-photo">
+
+            <h2>Dr. LNC Prakash K</h2>
+
+            <p>
+                <b>Qualification:</b>
+                M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>AICTE ID:</b>
+                1-444211135
+            </p>
+
+            <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37440"
+               target="_blank">
+                View Profile
+            </a>
+
+        </div>
+
+
+        <!-- Card 2(Srinivasa Sir) -->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/1-3567131385.jpg"      alt="faculty-photo"      class="faculty-photo">
+
+            <h2>Dr. A. Srinivasa Reddy</h2>
+
+            <p>
+                <b>Qualification:</b>
+                M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>AICTE ID:</b>
+                1-3567131385
+            </p>
+
+            <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37441"
+               target="_blank">
+                View Profile
+            </a>
+
+        </div>
+
+
+        <!-- Card 3(Varaprasad Sir) -->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/1-9324390644.jpg"      alt="faculty-photo"      class="faculty-photo">
+
+            <h2>Dr. Varaprasad Rao M</h2>
+
+            <p>
+                <b>Qualification:</b>
+                M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>AICTE ID:</b>
+                1-9324390644
+            </p>
+
+            <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37442"
+               target="_blank">
+                View Profile
+            </a>
+
+        </div>
+
+
+        <!-- Card 4(Rama Krishna Sir) -->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/1-459905523.jpg"      alt="faculty-photo"      class="faculty-photo">
+
+            <h2>Dr. Rama Krishna B</h2>
+
+            <p>
+                <b>Qualification:</b>
+                M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>AICTE ID:</b>
+                1-459905523
+            </p>
+
+            <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37443"
+               target="_blank">
+                View Profile
+            </a>
+
+        </div>
+
+
+        <!-- Card 5(Shaik Janbhasha Sir) -->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/1-43955112564.jpg"      alt="faculty-photo"      class="faculty-photo">
+
+            <h2>Dr. Shaik Janbhasha</h2>
+
+            <p>
+                <b>Qualification:</b>
+                M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>AICTE ID:</b>
+                1-43955112564
+            </p>
+
+            <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/38754"
+               target="_blank">
+                View Profile
+            </a>
+
+        </div>
+
+
+        <!-- Card 6(Sri Laxmi Mam) -->
+        <div class="faculty-card">
+            <img src="https://cvr.ac.in/p/fp5520763/Dr.Sri%20Laxmi%20Kuna.jpeg"      alt="faculty-photo"      class="faculty-photo">
+
+            <h2>Dr. Sri Laxmi Kuna</h2>
+
+            <p>
+                <b>Qualification:</b>
+                M.Tech., Ph.D.
+            </p>
+
+            <p>
+                <b>AICTE ID:</b>
+                8391-150410-144417
+            </p>
+
+            <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/54188"
+               target="_blank">
+                View Profile
+            </a>
+
+        </div>
+        </div>
+   <!-- Sr.Assistant Professors-->
+
+<h2 class="faculty-heading">
+    Sr. Assistant Professors
+</h2> 
+
+<div class="faculty-container">
+
+    <!-- Card 1(Srichandana mam)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-465766903.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. A Srichandana</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-465766903
+        </p>
+
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37444"
+       target="_blank">
+        View Profile
+    </a>
+    </div>
+
+
+    <!-- Card 2(Vineela Kishna mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-1500243103.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. S. Vineela Krishna</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-1500243103
+        </p>
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37445"
+       target="_blank">
+        View Profile
+    </a>
+
+    </div>
+
+
+    <!-- Card 3(Ahmed Shahebaaz sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-2899785848.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. Ahmed Shahebaaz</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-2899785848
+        </p>
+
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37451"
+       target="_blank">
+        View Profile
+    </a>
+    </div>
+
+
+    <!-- Card 4(Annapurna mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-3360124514.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Dr. Annapurna Gummadi</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., Ph.D.
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-3360124514
+        </p>
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37446"
+       target="_blank">
+        View Profile
+    </a>
+
+    </div>
+
+
+    <!-- Card 5(Yasmeen Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-4162853962.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Dr. Yasmeen</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., Ph.D.
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-4162853962
+        </p>
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37447"
+       target="_blank">
+        View Profile
+    </a>
+
+    </div>
+
+
+    <!-- Card 6(Nitya mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-9638848161.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. E. Nitya</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-9638848161
+        </p>
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37448"
+       target="_blank">
+        View Profile
+    </a>
+
+    </div>
+
+
+    <!-- Card 7(Padma mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-3552123194.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. P. Padma</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-3552123194
+        </p>
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37458"
+       target="_blank">
+        View Profile
+    </a>
+    </div>
+
+
+    <!-- Card 8(Hari Shankar Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-2902976492.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. P. Hari Shankar</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-2902976492
+        </p>
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37459"
+       target="_blank">
+        View Profile
+    </a>
+
+
+    </div>
+
+
+    <!-- Card 9(Harish Kumar Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-794185354.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. K. Harish Kumar</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-794185354
+        </p>
+
+    <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37463"
+       target="_blank">
+        View Profile
+    </a>
+    </div>
+
+
+    <!-- Card 10(Ranadheer Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-7462639198.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. K. S. Ranadheer Kumar</h2>
+
+        <p>
+            <b>Qualification:</b>
+            M.Tech., (Ph.D.)
+        </p>
+
+        <p>
+            <b>AICTE ID:</b>
+            1-7462639198
+        </p>
+
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37464"
+       target="_blank">
+        View Profile
+    </a>
+    </div>
+<!--Assistant Professors-->
+</div>
+<h2 class="faculty-heading">
+    Assistant Professors
+</h2>
+
+<div class="faculty-container">
+
+    <!-- card 1(Lalitha mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-2640242758.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. S. Lalitha</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-2640242758</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37449" target="_blank">View Profile</a>
+    </div>
+
+    <!-- Card 2(Nagarani mam)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-7351548090.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. P Nagarani</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-7351548090</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37450" target="_blank">View Profile</a>
+    </div>
+
+    <!-- Card 3(Balakrishna Sir)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-3378342750.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. S. Balakrishna Reddy</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-3378342750</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37452" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 4(Nikita mam)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-7468491265.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. M. Nikita</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-7468491265</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37453" target="_blank">View Profile</a>
+    </div>
+
+    <!-- Card 5(Prashanth Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-7373873363.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. Prashanth Donda</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-7373873363</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37454" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 6(Ramesh Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-2641332443.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. V. Ramesh</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-2641332443</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37455" target="_blank">View Profile</a>
+    </div>
+
+    <!-- Card 7(Nagasri Mam)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-500059291.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. Arava Nagasri</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-500059291</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37456" target="_blank">View Profile</a>
+    </div>
+
+    <!-- Card 8(Srivani Mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-2376879436.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. M. Srivani</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-2376879436</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37457" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 9(Ramya mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-4620807614.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. T. Ramya</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-4620807614</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37460" target="_blank">View Profile</a>
+    </div>
+
+    <!-- Card 10(Praveen Kumar Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-7519599442.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. V. Praveen Kumar</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-7519599442</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37461" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 11(Sabitha Mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-3188975449.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. B. Sabitha</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-3188975449</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37462" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 12(Yaseen Pasha Sir)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-1599525633.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. Moghal. Yaseen Pasha</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-1599525633</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37465" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 13(Fatima Mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-2676128378.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Dr. Afreen Fatima Mohammed</h2>
+        <p><b>Qualification:</b> M.Tech., Ph.D.</p>
+        <p><b>AICTE ID:</b> 1-2676128378</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37466" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 14(Krishna Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-3380870053.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. Erugu Krishna</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-3380870053</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37467" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 15(Swathi Mam)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/1-2301417654.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mrs. V. Swathi</h2>
+        <p><b>Qualification:</b> M.Tech., (Ph.D.)</p>
+        <p><b>AICTE ID:</b> 1-2301417654</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/40110" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 16(Suman Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/N.Suman%20CSE(DS).jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. N. Suman</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 4581-211130-142945</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/52547" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 17(Phaniraj Kumar Sir)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/PhanirajKumar.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. T. Phaniraj Kumar</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 4082-151222-141237</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/52487" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 18(Prasanna Lakshmi Mam)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/M.Prasanna.jpeg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Ms. M. Prasanna Lakshmi</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-111111111</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/53132" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 19(Vijay Kumar Sir)-->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/p/fp5520763/g%20vijay%20kumar.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. G. Vijay Kumar</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-111111111</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/37794" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 20(Spoorthi mam) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/home4/images/users/cseds/Spoorthi.png"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Ms. K. Spoorthi</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 8263-260307-100348</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/62769" target="_blank">View Profile</a>
+    </div>
+
+    <!--Card 21(shafiullah Sir) -->
+    <div class="faculty-card">
+        <img src="https://cvr.ac.in/home4/images/users/cseds/Shafiullah.jpg"      alt="faculty-photo"      class="faculty-photo">
+        <h2>Mr. Md Shafiullah</h2>
+        <p><b>Qualification:</b> M.Tech.</p>
+        <p><b>AICTE ID:</b> 1-7392786249</p>
+        <a href="https://portal.vmedulife.com/institute/Faculty/viewDetails/Cvr-Telangana/62771" target="_blank">View Profile</a>
+    </div>
+
+</div>
+
+    </div>
+
+</div>
+        <!-- 4. INFRASTRUCTURE -->
+
+<div id="I" style="display:none;">
+
+    <h1 style="text-align:center;">
+        Infrastructure
+    </h1>
+
+    <div class="cp">
+        <img src="computing.png" alt="Computing infrastructure screenshot">
+        <img src="lab.png" alt="infrastructure">
+    </div>
+
+    <h2>Computer Lab Infrastructure</h2>
+
+    <p>The Computer Lab at CVR College provides a well-equipped environment 
+        for students to develop practical knowledge and technical skills. 
+        The lab consists of computer systems with the required hardware and 
+        software for programming, web development, database management, and 
+        other academic activities.</p>
+
+    <P>The laboratory provides desktop computers, internet connectivity, 
+        networking facilities, printers, and essential software tools required 
+        for students' coursework and projects. The computers are connected through 
+        a network, enabling students to access shared resources and online learning materials.</P>
+        <p>The lab is maintained with proper power supply, lighting, ventilation, furniture, 
+            and security facilities to provide a comfortable and safe environment for students. 
+            Regular maintenance and software updates help ensure that the systems remain reliable 
+            and ready for academic use.</p>
+            </div>
+
+</div>
+
+            <!-- 5. FACULTY PUBLICATIONS -->
+
+            <div id="FP" style="display:none;">
+
+            <h1 style="text-align:center;">
+            Faculty Publications
+            </h1>
+
+        <div style="max-width:800px; margin:40px auto;">
+
+        <div style="margin-bottom:25px; padding:20px; border:1px solid #ddd; border-radius:8px;">
+        <h2>Conference Papers</h2>
+        <p>
+            View the faculty conference papers and publications.
+        </p>
+        <a href="https://cvr.ac.in/home4/files/cseds/FacultyPublications/conferencepapers.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+            View Conference Papers
+        </a>
+    </div>
+
+    <div style="margin-bottom:25px; padding:20px; border:1px solid #ddd; border-radius:8px;">
+        <h2>Book Chapters</h2>
+        <p>
+            View faculty book chapters organized academic-year-wise.
+        </p>
+        <a href="https://cvr.ac.in/home4/files/cseds/FacultyPublications/BookChapterAcademicyearwise.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+            View Book Chapters
+        </a>
+    </div>
+
+    <div style="margin-bottom:25px; padding:20px; border:1px solid #ddd; border-radius:8px;">
+        <h2>Journal Publications</h2>
+        <p>
+            View the faculty journal publications.
+        </p>
+        <a href="https://cvr.ac.in/home4/files/cseds/FacultyPublications/JournalPublications.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+            View Journal Publications
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+
+
+            <!-- 6. ACTIVITIES AND ACHIEVEMENTS -->
+<div id="AA" style="display:none;">
+
+```
+<h1 style="text-align:center;">
+    Activities and Achievements
+</h1>
+
+<div style="max-width:800px; margin:40px auto;">
+
+    <div style="padding:25px;
+                border:1px solid #ddd;
+                border-radius:8px;
+                text-align:center;">
+
+        <h2>Workshops, FDPs & Seminars</h2>
+
+        <p>
+            View the activities, workshops, Faculty Development Programs (FDPs),
+            seminars, and other achievements of the CSE (Data Science) department.
+        </p>
+
+        <a href="https://cvr.ac.in/home4/index.php/cse-ds-2/cse-ds-workshops-fdps-seminars"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display:inline-block;
+                  padding:12px 25px;
+                  background-color:#007bff;
+                  color:white;
+                  text-decoration:none;
+                  border-radius:5px;">
+            View Activities & Achievements
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+            </div>
+
+
+            <!-- 7. STUDENT CHAPTER -->
+
+            <div id="SC" style="display:none;">
+
+
+    <h1 style="text-align:center;">
+        Student Chapter
+    </h1>
+
+    <div style="max-width:800px; margin:40px auto;">
+
+        <div style="padding:20px; border:1px solid #ddd; border-radius:8px; text-align:center;">
+
+            <p>
+                View the Student Chapter activities and information.
+            </p>
+
+            <a href="https://cvr.ac.in/home4/files/cseds/StudentChapters/student_chapter.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="display:inline-block;
+                    padding:12px 25px;
+                    background-color:#007bff;
+                    color:white;
+                    text-decoration:none;
+                    border-radius:5px;">
+                View Student Chapter
+            </a>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+           <!-- 8. STUDENTS -->
+
+<div id="S" style="display:none;">
+
+```
+<h1 style="text-align:center;">
+    Students
+</h1>
+
+<div style="max-width:800px; margin:40px auto;">
+
+    <!-- 2023-24 -->
+    <div style="margin-bottom:25px; padding:20px; border:1px solid #ddd; border-radius:8px; text-align:center;">
+        <h2>Academic Year 2023-24</h2>
+        <p>
+            B.Tech. II Year I Semester CSE (DS) Nominal Roll
+        </p>
+
+        <a href="https://cvr.ac.in/home4/files/cseds/Students/2023-24(22BATCH)B.Tech.IIYearISemNominalRollsList-DS.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display:inline-block;
+                  padding:12px 25px;
+                  background-color:#007bff;
+                  color:white;
+                  text-decoration:none;
+                  border-radius:5px;">
+            View Student List
+        </a>
+    </div>
+
+    <!-- 2024-25 -->
+    <div style="margin-bottom:25px; padding:20px; border:1px solid #ddd; border-radius:8px; text-align:center;">
+        <h2>Academic Year 2024-25</h2>
+        <p>
+            B.Tech. II Year I Semester CSE (DS) Nominal Roll
+        </p>
+
+        <a href="https://cvr.ac.in/home4/files/cseds/Students/2024-25(23BATCH)B.Tech.IIYearISemNominalRollsList-CSE-DS_upd.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display:inline-block;
+                  padding:12px 25px;
+                  background-color:#007bff;
+                  color:white;
+                  text-decoration:none;
+                  border-radius:5px;">
+            View Student List
+        </a>
+    </div>
+
+    <!-- 2025-26 -->
+    <div style="margin-bottom:25px; padding:20px; border:1px solid #ddd; border-radius:8px; text-align:center;">
+        <h2>Academic Year 2025-26</h2>
+        <p>
+            B.Tech. II Year I Semester CSE (DS) Nominal Roll
+        </p>
+
+        <a href="https://cvr.ac.in/home4/files/cseds/Students/2025-26(24BATCH)B.Tech.IIYearISemNominalRollsList-CSE-DS.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display:inline-block;
+                  padding:12px 25px;
+                  background-color:#007bff;
+                  color:white;
+                  text-decoration:none;
+                  border-radius:5px;">
+            View Student List
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+
+        </td>
+
+    </tr>
+
+</table>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function showPage(page) {
+
+    /* Hide all 8 pages */
+
+    document.getElementById("vm").style.display = "none";
+
+    document.getElementById("P").style.display = "none";
+
+    document.getElementById("F").style.display = "none";
+
+    document.getElementById("I").style.display = "none";
+
+    document.getElementById("FP").style.display = "none";
+
+    document.getElementById("AA").style.display = "none";
+
+    document.getElementById("SC").style.display = "none";
+
+    document.getElementById("S").style.display = "none";
+
+
+    /* Show the page that was clicked */
+
+    document.getElementById(page).style.display = "block";
+
+}
+
+</script>
+<script>
+
+function showFiles(id) {
+
+    var element = document.getElementById(id);
+
+    if (element.style.display === "none") {
+
+        element.style.display = "block";
+
+    } else {
+
+        element.style.display = "none";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
